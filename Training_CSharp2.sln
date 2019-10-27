@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Training_CSharp2", "Training_CSharp2\Training_CSharp2.shproj", "{AC405F53-2086-4E92-8BAC-593EAEAA6195}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{6407F137-E7D0-44C4-B553-BEB2C58B55CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Forms", "Windows Forms", "{1E5E3C1D-63D6-4B89-8951-2DE93EA0569C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Presentation Foundation", "Windows Presentation Foundation", "{03E4FFEA-4350-4EA8-9E29-2C5FDC9DB644}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Work1", "Work1", "{A72A62D7-5ED8-46FC-9059-9AD458B26824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_Sample", "MVVM_Sample\MVVM_Sample.csproj", "{BAAFC11C-95EB-490F-9B33-39AF510EE710}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Training_CSharp2\Training_CSharp2.projitems*{ac405f53-2086-4e92-8bac-593eaeaa6195}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAAFC11C-95EB-490F-9B33-39AF510EE710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAFC11C-95EB-490F-9B33-39AF510EE710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAFC11C-95EB-490F-9B33-39AF510EE710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAFC11C-95EB-490F-9B33-39AF510EE710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A72A62D7-5ED8-46FC-9059-9AD458B26824} = {03E4FFEA-4350-4EA8-9E29-2C5FDC9DB644}
+		{BAAFC11C-95EB-490F-9B33-39AF510EE710} = {A72A62D7-5ED8-46FC-9059-9AD458B26824}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44AC0795-0DE6-4775-B6C4-16C7CAF97096}
+	EndGlobalSection
+EndGlobal
