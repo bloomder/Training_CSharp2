@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace MVVM_cyberforum.Infrastructure
@@ -18,7 +14,7 @@ namespace MVVM_cyberforum.Infrastructure
             _canExecute = canExecute;
         }
         public bool CanExecute(object parametr) => _canExecute == null ? true : _canExecute.Invoke(parametr);
-        public void Execute(object parametr) => _onExecute.Invoke(parametr);
+        public void Execute(object parametr) => _onExecute?.Invoke(parametr);
         public event EventHandler CanExecuteChanged
         {
             add
