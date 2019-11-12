@@ -4,9 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVM_GeekBrains"
+        xmlns:modelView="clr-namespace:MVVM_GeekBrains.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <modelView:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
-        
     </Grid>
 </Window>
