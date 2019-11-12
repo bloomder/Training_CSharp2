@@ -14,7 +14,7 @@ namespace MVVM_GeekBrains.ViewModel
         public Book[] Books { get; private set; }
         public MainWindowViewModel()
         {
-            Books = 
+            Books = Book.GetBooks();
         }
         public event PropertyChangedEventHandler PropertyChanged;
         void OnPropertyChanged(string propertyName)
