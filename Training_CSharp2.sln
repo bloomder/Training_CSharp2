@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Work3", "Work3", "{887FBF6E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fan_Project", "Fan_Project\Fan_Project.csproj", "{FA6DA847-76BD-4839-8CE3-DB16D0E6BF2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_GeekBrains", "MVVM_GeekBrains\MVVM_GeekBrains.csproj", "{CD98BEE7-5D51-47E1-9F64-EB35B263193C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Training_CSharp2\Training_CSharp2.projitems*{ac405f53-2086-4e92-8bac-593eaeaa6195}*SharedItemsImports = 13
@@ -44,6 +46,10 @@ Global
 		{FA6DA847-76BD-4839-8CE3-DB16D0E6BF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6DA847-76BD-4839-8CE3-DB16D0E6BF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6DA847-76BD-4839-8CE3-DB16D0E6BF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD98BEE7-5D51-47E1-9F64-EB35B263193C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD98BEE7-5D51-47E1-9F64-EB35B263193C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD98BEE7-5D51-47E1-9F64-EB35B263193C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD98BEE7-5D51-47E1-9F64-EB35B263193C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{655139E7-B250-46BF-A399-2595BC44578C} = {5CCA4092-0E67-45E7-81DA-4C91A3D92A1D}
 		{887FBF6E-E491-4377-8ADD-FB39BA9510C1} = {03E4FFEA-4350-4EA8-9E29-2C5FDC9DB644}
 		{FA6DA847-76BD-4839-8CE3-DB16D0E6BF2C} = {1E5E3C1D-63D6-4B89-8951-2DE93EA0569C}
+		{CD98BEE7-5D51-47E1-9F64-EB35B263193C} = {887FBF6E-E491-4377-8ADD-FB39BA9510C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44AC0795-0DE6-4775-B6C4-16C7CAF97096}
