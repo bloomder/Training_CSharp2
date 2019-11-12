@@ -9,6 +9,8 @@ namespace MVVM_GeekBrains
 {
     public class DelegateCommand : ICommand
     {
+        Action<object> execute;
+        Func<object, bool> canExecute;
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
@@ -17,12 +19,23 @@ namespace MVVM_GeekBrains
 
         public bool CanExecute(object parameter)
         {
-            throw new NotImplementedException();
+            if (canExecute != null)
+                return canExecute(parameter);
+            return true;
         }
 
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            if (execute != null)
+                execute(parameter);
+        }
+        public DelegateCommand(Action<object> executeAction) : this(executeAction, null)
+        {
+        }
+        public DelegateCommand(Action<object> executeAction, Func<object, bool> canExecuteFunc)
+        {
+            canExecute = canExecuteFunc;
+            execute = executeAction;
         }
     }
 }
