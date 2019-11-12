@@ -11,7 +11,13 @@ namespace MVVM_GeekBrains.ViewModel
     public class MainWindowViewModel : INotifyPropertyChanged
     {
         Book[] books;
+        Book selectedBook;
         public Book[] Books { get; private set; }
+        public Book SelectedBook
+        {
+            get { return selectedBook; }
+            set { selectedBook = value; OnPropertyChanged("SelectedBook"); }
+        }
         public MainWindowViewModel()
         {
             Books = Book.GetBooks();
