@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM_GeekBrains.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,6 +10,12 @@ namespace MVVM_GeekBrains.ViewModel
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
+        Book[] books;
+        public Book[] Books { get; private set; }
+        public MainWindowViewModel()
+        {
+            Books = 
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         void OnPropertyChanged(string propertyName)
         {

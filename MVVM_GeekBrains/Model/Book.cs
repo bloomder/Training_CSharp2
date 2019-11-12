@@ -33,6 +33,16 @@ namespace MVVM_GeekBrains.Model
                 OnPropertyChanged("Title");
             }
         }
+        public static Book[] GetBooks()
+        {
+            var result = new[]
+            {
+                new Book{Author="Лев Толстой", Title = "Война и мир"},
+                new Book{Author="Михаил Булгаков", Title = "Мастер и Маргарита"},
+                new Book{Author="Стивен Кинг", Title = "Оно"}
+            };
+            return result;
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         void OnPropertyChanged(string propertyName)
         {
