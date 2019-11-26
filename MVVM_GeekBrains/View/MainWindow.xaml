@@ -11,6 +11,38 @@
         <viewModel:MainWindowViewModel></viewModel:MainWindowViewModel>
     </Window.DataContext>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListBox ItemsSource="{Binding Path=Books}" SelectedItem="{Binding SelectedBook, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock FontWeight="Bold">Автор: </TextBlock>
+            <TextBlock Grid.Row="1" FontWeight="Bold">Наименование: </TextBlock>
+            <TextBlock Grid.Column="1" Text="{Binding SelectedBook.Author}" Margin="5,0,0,0"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding SelectedBook.Title}" Margin="5,0,0,0"/>
+        </Grid>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button Command="{Binding AddCommand}">Добавить</Button>
+            <Button Command="{Binding RemoveCommand}" CommandParameter="{Binding SelectedBook}">Удалить</Button> 
+        </StackPanel>
     </Grid>
 </Window>
