@@ -1,0 +1,13 @@
+﻿<Window x:Class="Zindex_Video_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zindex_Video_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <MediaElement Name="ME" LoadedBehavior="Manual" Source="Circuit.mp4" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" MediaEnded="ME_MediaEnded">
+        </MediaElement>
+    </Grid>
+</Window>
