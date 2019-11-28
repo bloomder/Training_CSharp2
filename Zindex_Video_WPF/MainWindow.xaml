@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Zindex_Video_WPF"
         mc:Ignorable="d"
         Title="MainWindow" SizeChanged="Window_SizeChanged">
+    
     <Grid>
         <MediaElement Name="ME" LoadedBehavior="Manual" Source="Circuit.mp4" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" MediaEnded="ME_MediaEnded">
         </MediaElement>
