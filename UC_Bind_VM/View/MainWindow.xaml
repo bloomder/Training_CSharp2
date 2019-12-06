@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:UC_Bind_VM"
         xmlns:uc="clr-namespace:UC_Bind_VM.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="400">
+        Title="MainWindow" Height="150" Width="400">
     <Grid>
         <uc:UserView1/>
     </Grid>
