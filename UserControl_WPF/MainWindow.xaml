@@ -6,8 +6,11 @@
         xmlns:local="clr-namespace:UserControl_WPF"
         xmlns:my="clr-namespace:UserControl_WPF.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">    
+        Title="MainWindow" Height="550" Width="800">    
     <Grid>
-        <my:MediaControl/>
+        <StackPanel>
+            <MediaElement Name="ME" Height="400" Width="600" LoadedBehavior="Manual" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" MediaEnded="ME_MediaEnded"/>
+            <Button Width="100" Height="42" VerticalAlignment="Center" Click="ButtonBase_OnClick">Open File</Button>
+        </StackPanel>
     </Grid>
 </Window>
