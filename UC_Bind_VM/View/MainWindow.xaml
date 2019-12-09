@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UC_Bind_VM"
-        xmlns:uc="clr-namespace:UC_Bind_VM.UserControls"
+        xmlns:vm="clr-namespace:UC_Bind_VM.ViewModel"
+        xmlns:uc="clr-namespace:UC_Bind_VM.UserControls"        
         mc:Ignorable="d"
         Title="MainWindow" Height="150" Width="400">
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
-        <uc:UserView1/>
+        <uc:UserView1 Content="{Binding ViewCompany}" />
     </Grid>
 </Window>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38919309-ACCD-4757-AB3D-F410B334671F}</ProjectGuid>
+    <ProjectGuid>{817F749F-C63E-4686-9E74-D142D4A1450E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UC_Bind_VM</RootNamespace>
-    <AssemblyName>UC_Bind_VM</AssemblyName>
+    <RootNamespace>View_WPF</RootNamespace>
+    <AssemblyName>View_WPF</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,19 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="UserControls\UserBlock.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\UserPercent.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\UserView1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MainWindow.xaml">
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -75,19 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Data\Company.cs" />
-    <Compile Include="Infrastructures\OnPropertyChangedClass.cs" />
-    <Compile Include="UserControls\UserBlock.xaml.cs">
-      <DependentUpon>UserBlock.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserPercent.xaml.cs">
-      <DependentUpon>UserPercent.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserView1.xaml.cs">
-      <DependentUpon>UserView1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\MainWindowViewModel.cs" />
-    <Compile Include="View\MainWindow.xaml.cs">
+    <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -118,6 +94,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

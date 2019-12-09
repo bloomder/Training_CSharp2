@@ -10,6 +10,7 @@ namespace UC_Bind_VM.UserControls
         public UserView1()
         {
             InitializeComponent();
+            Block1.Text
         }
     }
 }
