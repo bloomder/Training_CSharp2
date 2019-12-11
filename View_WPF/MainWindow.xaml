@@ -6,7 +6,32 @@
         xmlns:local="clr-namespace:View_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate TargetType="Button" x:Key="brTemplate">
+            <Border BorderBrush="Black" BorderThickness="1" Padding="3" Margin="5" CornerRadius="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{TemplateBinding Content}" Margin="3" HorizontalAlignment="Left"/>
+                    <TextBox Grid.Row="1" Margin="3,0,3,5" Width="auto"/>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Template="{StaticResource brTemplate}" Content="Первый блок"/>
+        <Button Template="{StaticResource brTemplate}" Content="Второй блок" Grid.Column="1"/>
+        <Button Template="{StaticResource brTemplate}" Content="Третий блок" Grid.Row="1"/>
+        <Button Template="{StaticResource brTemplate}" Content="Четверный блок" Grid.Column="1" Grid.Row="1"/>
     </Grid>
 </Window>
