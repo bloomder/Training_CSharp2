@@ -21,17 +21,6 @@
         </ControlTemplate>
     </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Button Template="{StaticResource brTemplate}" Content="Первый блок"/>
-        <Button Template="{StaticResource brTemplate}" Content="Второй блок" Grid.Column="1"/>
-        <Button Template="{StaticResource brTemplate}" Content="Третий блок" Grid.Row="1"/>
-        <Button Template="{StaticResource brTemplate}" Content="Четверный блок" Grid.Column="1" Grid.Row="1"/>
+        
     </Grid>
 </Window>
