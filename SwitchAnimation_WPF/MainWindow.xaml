@@ -5,56 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwitchAnimation_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <PathGeometry x:Key="path">
-            <PathFigure IsClosed="False">
-                <LineSegment Point="100,0"/>
-            </PathFigure>
-        </PathGeometry>
-    </Window.Resources>
-    <Window.Triggers>
-        <EventTrigger RoutedEvent="Window.Loaded">
-            <EventTrigger.Actions>
-                <BeginStoryboard>
-                    <Storyboard>
-                        <DoubleAnimationUsingPath Storyboard.TargetName="image"
-                                                  Storyboard.TargetProperty="(Canvas.Left)"
-                                                  PathGeometry="{StaticResource path}"
-                                                  Source="X"
-                                                  Duration="0:0:5" RepeatBehavior="Forever"/>
-                        
-                        <DoubleAnimationUsingPath Storyboard.TargetName="image"
-                                                  Storyboard.TargetProperty="(Canvas.Top)"
-                                                  PathGeometry="{StaticResource path}"
-                                                  Source="Y"
-                                                  Duration="0:0:5" RepeatBehavior="Forever"/>
-                    </Storyboard>
-                </BeginStoryboard>
-            </EventTrigger.Actions>
-        </EventTrigger>
-    </Window.Triggers>
+        Title="MainWindow" Height="250" Width="400">
     
-    <Canvas Margin="10">
-        <Path StrokeThickness="1" Data="{StaticResource path}" Canvas.Top="10" Canvas.Left="10" Stroke="Red"/>
-        <Image Name="image">
-            <Image.Source>
-                <DrawingImage>
-                    <DrawingImage.Drawing>
-                        <GeometryDrawing Brush="LightSteelBlue">
-                            <GeometryDrawing.Geometry>
-                                <GeometryGroup>
-                                    <EllipseGeometry Center="10,10" RadiusX="9" RadiusY="4"/>
-                                    <EllipseGeometry Center="10,10" RadiusX="4" RadiusY="9"/>
-                                </GeometryGroup>
-                            </GeometryDrawing.Geometry>
-                            <GeometryDrawing.Pen>
-                                <Pen Thickness="1" Brush="Black"/>
-                            </GeometryDrawing.Pen>
-                        </GeometryDrawing>
-                    </DrawingImage.Drawing>
-                </DrawingImage>
-            </Image.Source>
-        </Image>
-    </Canvas>
 </Window>
