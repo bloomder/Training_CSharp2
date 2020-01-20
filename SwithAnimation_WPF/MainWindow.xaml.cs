@@ -24,5 +24,30 @@ namespace SwithAnimation_WPF
         {
             InitializeComponent();
         }
+
+
+        public int MainWidth
+        {
+            get { return (int)GetValue(MainWidthProperty); }
+            set { SetValue(MainWidthProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for MainWidth.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty MainWidthProperty =
+            DependencyProperty.Register("MainWidth", typeof(int), typeof(MainWindow), new PropertyMetadata(0));
+
+
+
+        public int MainHeigth
+        {
+            get { return (int)GetValue(MainHeigthProperty); }
+            set { SetValue(MainHeigthProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for MainHeigth.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty MainHeigthProperty =
+            DependencyProperty.Register("MainHeigth", typeof(int), typeof(MainWindow), new PropertyMetadata(0));
+
+
     }
 }
