@@ -5,7 +5,6 @@
                  Height="{Binding ElementName=UserSwitchControl, Path=UserHeigth}"
                  Width="{Binding ElementName=UserSwitchControl, Path=UserWidth}">
     <Grid>
-
         <Border Grid.Column="2" 
                 Grid.Row="2" 
                 BorderBrush="LightGray" 
