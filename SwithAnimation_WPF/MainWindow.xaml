@@ -5,36 +5,6 @@
         Title="MainWindow" Height="250" Width="400"
         Name="MW">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <dc:UserSwitch x:Name="US1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" 
-                       UserHeigth="{Binding ElementName=TB_Heigth, Path=Text}" 
-                       UserWidth="{Binding ElementName=TB_Width, Path=Text}"/>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="Width          " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                <TextBox x:Name="TB_Width" Grid.Row="1" Height="20" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-                         Text="{Binding ElementName=MW, Path=MainWidth}"/>
-            </Grid>
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="Heigth          " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                <TextBox x:Name="TB_Heigth" Grid.Row="1" Height="20" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-                         Text="{Binding ElementName=MW, Path=MainHeigth}"/>
-            </Grid>
-        </Grid>
+        <dc:UserSwitch1 x:Name="US1" UserWidth="150" UserHeigth="70"/>
     </Grid>
 </Window>
