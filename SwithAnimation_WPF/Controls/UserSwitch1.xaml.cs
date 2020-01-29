@@ -39,6 +39,19 @@ namespace SwithAnimation_WPF.Controls
         // Using a DependencyProperty as the backing store for UserValue.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty UserValueProperty =
             DependencyProperty.Register("UserValue", typeof(bool), typeof(UserSwitch1), new PropertyMetadata(false));
-        
+
+
+
+        public int EllipseHeigth
+        {
+            get { return (int)GetValue(EllipseHeigthProperty); }
+            set { SetValue(EllipseHeigthProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for EllipseHeigth.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty EllipseHeigthProperty =
+            DependencyProperty.Register("EllipseHeigth", typeof(int), typeof(UserSwitch1), new PropertyMetadata(0));
+
+
     }
 }
