@@ -4,7 +4,7 @@
         xmlns:dc="clr-namespace:SwithAnimation_WPF.Controls"
         Title="MainWindow" Height="250" Width="400"
         Name="MW">
-    <Grid>
-        <dc:UserSwitch1 x:Name="US1" UserWidth="150" UserHeigth="70"/>
+    <Grid Height="100" Width="200">
+        <dc:UserSwitch3 x:Name="US1"/>
     </Grid>
 </Window>

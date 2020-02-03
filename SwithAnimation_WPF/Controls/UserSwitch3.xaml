@@ -1,0 +1,31 @@
+﻿<ContentControl x:Class="SwithAnimation_WPF.Controls.UserSwitch3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SwithAnimation_WPF.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="400">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="tbRow1" Width="{Binding ElementName=tbRow1, Mode=OneWay, Path=ActualHeight}"/>
+        <TextBlock x:Name="tbRow2" Width="{Binding ElementName=tbRow1, Mode=OneWay, Path=ActualHeight}" Grid.Column="2" Grid.RowSpan="2"/>
+        <Rectangle x:Name="rect" Fill="White" Stroke="Black" StrokeThickness="3"
+                   Grid.ColumnSpan="3" Grid.RowSpan="4"
+                   RadiusX="{Binding ElementName=tbRow2, Mode=OneWay, Path=ActualHeight}"
+                   RadiusY="{Binding ElementName=tbRow2, Mode=OneWay, Path=ActualHeight}"/>
+        <Ellipse x:Name="ellipse" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"
+                 Width="{Binding ElementName=ellipse, Mode=OneWay, Path=ActualHeight}"
+                 Fill="Gray" Stroke="Yellow" StrokeThickness="3"/>
+    </Grid>
+</ContentControl>
