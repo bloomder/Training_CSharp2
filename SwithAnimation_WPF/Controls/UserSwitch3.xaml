@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SwithAnimation_WPF.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="400">
+             d:DesignHeight="100" d:DesignWidth="200">
     <Grid Background="AliceBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -18,14 +18,15 @@
             <RowDefinition Height="45*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="tbRow1" Width="{Binding ElementName=tbRow1, Mode=OneWay, Path=ActualHeight}"/>
-        <TextBlock x:Name="tbRow2" Width="{Binding ElementName=tbRow1, Mode=OneWay, Path=ActualHeight}" Grid.Column="2" Grid.RowSpan="2"/>
+        <Border x:Name="tbRow1" Width="{Binding ElementName=tbRow1, Path=ActualHeight}"/>
+        <Border x:Name="tbRow2" Width="{Binding ElementName=tbRow1, Mode=OneWay, Path=ActualHeight}" Grid.Column="2" Grid.RowSpan="2"/>
         <Rectangle x:Name="rect" Fill="White" Stroke="Black" StrokeThickness="3"
                    Grid.ColumnSpan="3" Grid.RowSpan="4"
                    RadiusX="{Binding ElementName=tbRow2, Mode=OneWay, Path=ActualHeight}"
                    RadiusY="{Binding ElementName=tbRow2, Mode=OneWay, Path=ActualHeight}"/>
         <Ellipse x:Name="ellipse" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"
                  Width="{Binding ElementName=ellipse, Mode=OneWay, Path=ActualHeight}"
-                 Fill="Gray" Stroke="Yellow" StrokeThickness="3"/>
+                 Fill="Gray" Stroke="Yellow" StrokeThickness="3"
+                 HorizontalAlignment="Left"/>
     </Grid>
 </ContentControl>
